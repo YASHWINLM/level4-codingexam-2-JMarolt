@@ -28,9 +28,20 @@ class StringManipTests {
 	 * 
 	 */
 	public int sumStringDigits(String str) {
-		return 0;
+		
+		char [] arr= str.toCharArray();
+		int sum=0;
+		String temp="";
+		for (int i = 0; i < arr.length; i++) {
+			if (Character.isDigit(arr[i])) {
+				temp+=arr[i];
+		}
+			System.out.println(temp);
+		int y=Integer.parseInt(temp);
+		sum+=y;
+		
+		}
+		return sum;
 	}
-	
-	
 
 }
